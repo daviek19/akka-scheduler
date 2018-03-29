@@ -44,9 +44,8 @@ public class FetchSmsActor extends AbstractLoggingActor {
         //select * from car where sent_to_server = @batch;
 
         List<String> smsList = new ArrayList<>();
-
         for (int j = 0; j <= 25; j++) {
-            smsList.add("Dear " + count + " . Your sms. ");
+            smsList.add("Dear " + count + "");
             count += 1;
         }
         return smsList;
